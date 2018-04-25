@@ -1,4 +1,7 @@
 <?php
+    error_reporting(E_ALL);
+    // Установка локали и выбор значений даты
+    setlocale(LC_ALL, "RU-ru");
     $day = date('d');
     $mon = date('m');
     $year = date('Y');
