@@ -8,13 +8,11 @@
     $mon = date('m');
     $year = date('Y');
     $hour = date('G:i:sP');
-    if ($times == 0 || $times < 6) {
-        $welcome = "Доброй ночи";
-    }elseif ($times == 6 || $times < 12) {
+    if  ($times >= 6 || $times < 12) {
         $welcome = "Доброе утро";
-    }elseif ($times == 12 || $times < 18) {
+    }elseif ($times >= 12 || $times < 18) {
         $welcome = "Добрый день";
-    }elseif ($times == 18 || $times < 23) {
+    }elseif ($times >= 18 || $times < 23) {
         $welcome = "Добрый вечер";
     }else {
         $welcome = "Доброй ночи";

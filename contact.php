@@ -1,3 +1,16 @@
+<?php
+    $size = ini_get('post_max_size');
+    $letter = $size{strlen($size)-1};
+    $size = (int)$size;
+    switch (strtoupper($letter)) {
+        case 'B':
+            $size *= 1024;
+        case 'M':
+            $size *= 1024;
+        case 'G':
+            $size *= 1024;
+    }
+?>
 <!DOCTYPE html>
 <html>
 
@@ -36,6 +49,7 @@
       <br />
       <input type='submit' value='Отправить' />
     </form>
+      <p>Максимальный размер отправляемых данных <span class="reds"><?= $size ?></span> байт.</p>
     <!-- Область основного контента -->
   </div>
   <div id="nav">
@@ -57,7 +71,7 @@
   </div>
   <div id="footer">
     <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
+    &copy; Супер Мега Веб-мастер, 2000 &ndash; <?= date('Y'); ?>
     <!-- Нижняя часть страницы -->
   </div>
 </body>

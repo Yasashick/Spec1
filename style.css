@@ -98,6 +98,10 @@ form {
   line-height: 1.6em;
   padding-left: 1.2em;
 }
+.reds {
+  color: red;
+  text-decoration: underline;
+}
 
 #footer {
   clear: both;
