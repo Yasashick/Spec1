@@ -1,6 +1,7 @@
 <?php
     $var = 'HELLO';
     $i = 0;
-    while ($i < strlen($var)) {
+    $len = strlen($var);
+    while ($i < $len) {
         echo $var{$i++} . "<br>";
     }
