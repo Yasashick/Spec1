@@ -67,7 +67,9 @@ body {
   background-color: transparent;
   border-bottom: 1px dotted #cccccc;
 }
-
+.menu_horizont {
+  text-align: center;
+}
 #content {
   margin-left: 16em;
   margin-right: 2em;

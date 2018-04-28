@@ -24,7 +24,20 @@
         ['link' => 'Контакты', 'href' => 'contact.php'],
         ['link' => 'Таблица уможения', 'href' => 'table.php'],
         ['link' => 'Калькулятор', 'href' => 'calc.php'],
-    ]
+    ];
+
+    function drawMenu ($menu, $vertical = true) {
+        $style = "";
+        if(!$vertical)
+            $style = "style='display: inline; margin-right: 15px;'";
+        echo "<ul>";
+        foreach ($menu as $item) :
+            echo "<li $style>";
+            echo "<a href='$item[href]'>{$item['link']}</a>";
+            echo "</li>";
+        endforeach;
+        echo "</ul>";
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -69,19 +82,18 @@
     <h2>Навигация по сайту</h2>
     <!-- Меню -->
       <?php
-        echo "<ul>";
-        foreach ($leftMenu as $item) :
-            echo "<li>";
-            echo "<a href='$item[href]'>{$item['link']}</a>";
-            echo "</li>";
-        endforeach;
-        echo "</ul>";
+        drawMenu($leftMenu, true);
       ?>
 
       
 
     <!-- Меню -->
     <!-- Навигация -->
+  </div>
+  <div class="menu_horizont">
+  <?php
+    drawMenu($leftMenu, false);
+  ?>
   </div>
   <div id="footer">
     <!-- Нижняя часть страницы -->
