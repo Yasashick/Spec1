@@ -1,20 +1,6 @@
 <?php
-    $cols = 10;
-    $rows = 10;
-    function drawTable($cols, $rows, $color) {
-        echo "<table border='1' width=\"200\">";
-        for($tr = 1; $tr <= $cols; $tr++) {
-            echo "<tr>";
-            for($td = 1; $td <= $rows; $td++) {
-                if($td == 1 || $tr == 1)
-                    echo "<th style='$color'>" . $tr * $td . "</th>";
-                else
-                    echo "<td>" . $tr * $td . "</td>";
-            }
-            echo "</tr>";
-        }
-        echo "</table>";
-    }
+
+include_once 'inc/lib.inc.php';
 ?>
 
 <!DOCTYPE html>
