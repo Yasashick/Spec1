@@ -1,43 +1,6 @@
 <?php
-    error_reporting(E_ALL);
-    $times = (int) strftime('%H');
-    $welcome = '';
-    // Установка локали и выбор значений даты
-    setlocale(LC_ALL, "RU-ru");
-    $day = date('d');
-    $mon = date('m');
-    $year = date('Y');
-    $hour = date('G:i:sP');
-    if  ($times >= 6 || $times < 12) {
-        $welcome = "Доброе утро";
-    }elseif ($times >= 12 || $times < 18) {
-        $welcome = "Добрый день";
-    }elseif ($times >= 18 || $times < 23) {
-        $welcome = "Добрый вечер";
-    }else {
-        $welcome = "Доброй ночи";
-    }
-
-    $leftMenu = [
-        ['link' => 'Домой', 'href' => 'index.php'],
-        ['link' => 'О нас', 'href' => 'about.php'],
-        ['link' => 'Контакты', 'href' => 'contact.php'],
-        ['link' => 'Таблица уможения', 'href' => 'table.php'],
-        ['link' => 'Калькулятор', 'href' => 'calc.php'],
-    ];
-
-    function drawMenu ($menu, $vertical = true) {
-        $style = "";
-        if(!$vertical)
-            $style = "style='display: inline; margin-right: 15px;'";
-        echo "<ul>";
-        foreach ($menu as $item) :
-            echo "<li $style>";
-            echo "<a href='$item[href]'>{$item['link']}</a>";
-            echo "</li>";
-        endforeach;
-        echo "</ul>";
-    }
+include_once 'inc/lib.inc.php';
+include_once 'inc/data.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,14 +12,9 @@
 </head>
 
 <body>
-
-  <div id="header">
-    <!-- Верхняя часть страницы -->
-    <img src="logo.gif" width="187" height="29" alt="Наш логотип" class="logo" />
-    <span class="slogan">приходите к нам учиться</span>
-    <!-- Верхняя часть страницы -->
-  </div>
-
+<?php
+    include_once 'inc/top.inc.php';
+?>
   <div id="content">
     <!-- Заголовок -->
     <h1><?= $welcome ?>, Гость!</h1>
@@ -77,29 +35,17 @@
     </p>
     <!-- Область основного контента -->
   </div>
-  <div id="nav">
-    <!-- Навигация -->
-    <h2>Навигация по сайту</h2>
-    <!-- Меню -->
-      <?php
-        drawMenu($leftMenu, true);
-      ?>
-
-      
-
-    <!-- Меню -->
-    <!-- Навигация -->
-  </div>
+    <?php
+    include_once 'inc/menu.inc.php';
+    ?>
   <div class="menu_horizont">
   <?php
     drawMenu($leftMenu, false);
   ?>
   </div>
-  <div id="footer">
-    <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; <?= date('Y'); ?>
-    <!-- Нижняя часть страницы -->
-  </div>
+<?php
+    include_once 'inc/bottom.inc.php';
+?>
 </body>
 
 </html>
