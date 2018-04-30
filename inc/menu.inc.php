@@ -5,7 +5,7 @@
     <?php
     include_once 'data.inc.php';
     if(!drawMenu($leftMenu, true))
-        echo 'Извините, произошла ошибка вывода меню';
+        trigger_error("что-то случилось", E_USER_ERROR);
 
     ?>
 

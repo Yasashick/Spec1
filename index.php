@@ -1,5 +1,6 @@
 <?php
 include_once 'inc/lib.inc.php';
+set_error_handler("myError");
 include_once 'inc/data.inc.php';
 ?>
 <!DOCTYPE html>
@@ -41,7 +42,7 @@ include_once 'inc/data.inc.php';
   <div class="menu_horizont">
   <?php
     if(!drawMenu($leftMenu, false))
-        echo 'Извините, произошла ошибка вывода меню';
+        trigger_error("Проблема с отрисовкой меню", E_USER_ERROR);
   ?>
   </div>
 <?php
