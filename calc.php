@@ -1,3 +1,12 @@
+<?php
+    $output = "";
+    function clearInt($data) {
+        return (int)$data;
+    }
+    function clearStr($data) {
+        return trim(strip_tags($data));
+    }
+?>
 <!DOCTYPE html>
 <html>
 
@@ -21,18 +30,40 @@
     <h1>Калькулятор школьника</h1>
     <!-- Заголовок -->
     <!-- Область основного контента -->
-    <form action=''>
+      <?php
+        if($output)
+            echo "<h3>Реультат: $output</h3>";
+      if($_SERVER["REQUEST_METHOD"] == "POST") {
+          $n1 = clearInt($_POST["num1"]);
+          $n2 = clearInt($_POST["num2"]);
+          $op = clearStr($_POST["operator"]);
+          // TODO: Проверить поля
+          $output = "$n1 $op $n2 = ";
+          switch ($op) {
+              case "+": $output .= $n1 + $n2; break;
+              case "-": $output .= $n1 - $n2; break;
+              case "*": $output .= $n1 * $n2; break;
+              case "/":
+                  if($n2 == 0)
+                      $output = "Деление на ноль запрещено!";
+                  else
+                      $output .= $n1 / $n2; break;
+              default: $output = "Неизвестный оператор!";
+          }
+      }
+      ?>
+    <form action='' method="post">
       <label>Число 1:</label>
       <br />
-      <input name='num1' type='text' />
+      <label><input name='num1' type='text' value="<?= $n1 ?>" /></label>
       <br />
       <label>Оператор: </label>
       <br />
-      <input name='operator' type='text' />
+      <label><input name='operator' type='text' value="<?= $op ?>"/></label>
       <br />
       <label>Число 2: </label>
       <br />
-      <input name='num2' type='text' />
+      <label><input name='num2' type='text' value="<?= $n2 ?>"/></label>
       <br />
       <br />
       <input type='submit' value='Считать'>
