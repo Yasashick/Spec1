@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 
@@ -40,8 +41,13 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/lib.inc.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/menu.inc.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/top.inc.php" />
+=======
+>>>>>>> working_branch
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/lib.inc.php" afterPath="$PROJECT_DIR$/inc/lib.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/menu.inc.php" afterPath="$PROJECT_DIR$/inc/menu.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+<<<<<<< HEAD
 >>>>>>> working_branch
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table.php" afterPath="$PROJECT_DIR$/table.php" />
 >>>>>>> working_branch
@@ -50,6 +56,8 @@
 >>>>>>> working_branch
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table.php" afterPath="$PROJECT_DIR$/table.php" />
+>>>>>>> working_branch
+=======
 >>>>>>> working_branch
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,6 +72,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -154,6 +163,10 @@
             <state relative-caret-position="-168">
               <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
 >>>>>>> working_branch
+=======
+            <state relative-caret-position="565">
+              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+>>>>>>> working_branch
               <folding />
 >>>>>>> working_branch
             </state>
@@ -186,10 +199,10 @@
         <option value="$PROJECT_DIR$/data.inc.php" />
         <option value="$PROJECT_DIR$/inc/data.inc.php" />
         <option value="$PROJECT_DIR$/inc/top.inc.php" />
-        <option value="$PROJECT_DIR$/inc/lib.inc.php" />
         <option value="$PROJECT_DIR$/table.php" />
-        <option value="$PROJECT_DIR$/inc/menu.inc.php" />
         <option value="$PROJECT_DIR$/inc/bottom.inc.php" />
+        <option value="$PROJECT_DIR$/inc/lib.inc.php" />
+        <option value="$PROJECT_DIR$/inc/menu.inc.php" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -277,11 +290,12 @@
       <workItem from="1524740451431" duration="1225000" />
       <workItem from="1524752388890" duration="6214000" />
       <workItem from="1524858989789" duration="979000" />
-      <workItem from="1524914555113" duration="5966000" />
+      <workItem from="1524914555113" duration="7364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -323,12 +337,15 @@
 =======
     <option name="totallyTimeSpent" value="24850000" />
 >>>>>>> working_branch
+=======
+    <option name="totallyTimeSpent" value="26248000" />
+>>>>>>> working_branch
   </component>
   <component name="ToolWindowManager">
     <frame x="1030" y="0" width="872" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24748744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24748744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -761,10 +778,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/lib.inc.php">
+    <entry file="file://$PROJECT_DIR$/inc/bottom.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        <state relative-caret-position="105">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -777,26 +794,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/menu.inc.php">
+    <entry file="file://$PROJECT_DIR$/inc/lib.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="315">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/bottom.inc.php">
+    <entry file="file://$PROJECT_DIR$/inc/menu.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="147">
+          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state relative-caret-position="565">
+          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
           <folding />
         </state>
       </provider>

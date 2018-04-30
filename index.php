@@ -40,7 +40,8 @@ include_once 'inc/data.inc.php';
     ?>
   <div class="menu_horizont">
   <?php
-    drawMenu($leftMenu, false);
+    if(!drawMenu($leftMenu, false))
+        echo 'Извините, произошла ошибка вывода меню';
   ?>
   </div>
 <?php
