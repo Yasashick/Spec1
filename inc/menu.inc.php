@@ -4,7 +4,9 @@
     <!-- Меню -->
     <?php
     include_once 'data.inc.php';
-    drawMenu($leftMenu, true);
+    if(!drawMenu($leftMenu, true))
+        echo 'Извините, произошла ошибка вывода меню';
+
     ?>
 
 

@@ -1,6 +1,8 @@
 <?php
 include_once 'data.inc.php';
 function drawMenu ($menu, $vertical = true) {
+    if(!is_array($menu))
+        return false;
     $style = "";
     if(!$vertical)
         $style = "style='display: inline; margin-right: 15px;'";
@@ -11,7 +13,9 @@ function drawMenu ($menu, $vertical = true) {
         echo "</li>";
     endforeach;
     echo "</ul>";
+    return true;
 }
+
 
 function drawTable($cols, $rows, $color) {
     echo "<table border='1' width=\"200\">";
