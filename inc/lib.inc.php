@@ -31,3 +31,16 @@ function drawTable($cols, $rows, $color) {
     }
     echo "</table>";
 }
+
+function myError($errno, $errmsg, $errfile, $errline) {
+    if($errno == E_USER_ERROR) {
+        echo "Так не должно быть";
+    switch ($errno) {
+        case E_USER_ERROR:
+        case E_USER_WARNING:
+        case E_USER_NOTICE:
+    }
+        $s = date("d.m.Y H:i:sP") . "$errmsg в $errfile: $errline";
+        error_log("$s\n", 3, "error.log");
+    }
+}

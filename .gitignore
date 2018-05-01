@@ -1,2 +1,7 @@
 *~
+<<<<<<< HEAD
 ./idea
+=======
+.idea
+/*.log
+>>>>>>> working_branch
