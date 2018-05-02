@@ -25,28 +25,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         return trim(strip_tags($data));
     }
 ?>
-<!DOCTYPE html>
-<html>
 
-<head>
-  <title>Калькулятор</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-  <div id="header">
-    <!-- Верхняя часть страницы -->
-    <img src="logo.gif" width="187" height="29" alt="Наш логотип" class="logo" />
-    <span class="slogan">приходите к нам учиться</span>
-    <!-- Верхняя часть страницы -->
-  </div>
-
-  <div id="content">
-    <!-- Заголовок -->
-    <h1>Калькулятор школьника</h1>
-    <!-- Заголовок -->
     <!-- Область основного контента -->
       <?php
         if($output)
@@ -71,10 +50,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
     <!-- Область основного контента -->
   </div>
-  <div id="nav">
-    <h2>Навигация по сайту</h2>
+  <!--<div id="nav">
+    <h2>Навигация по сайту</h2>-->
     <!-- Меню -->
-    <ul>
+    <!--<ul>
       <li><a href='index.php'>Домой</a>
       </li>
       <li><a href='about.php'>О нас</a>
@@ -85,14 +64,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       </li>
       <li><a href='calc.php'>Калькулятор</a>
       </li>
-    </ul>
+    </ul>-->
     <!-- Меню -->
-  </div>
-  <div id="footer">
-    <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
-    <!-- Нижняя часть страницы -->
-  </div>
-</body>
-
-</html>
+  <!--</div>-->
