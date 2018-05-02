@@ -3,16 +3,7 @@ include_once 'inc/lib.inc.php';
 set_error_handler("myError");
 include_once 'inc/data.inc.php';
 ?>
-<!DOCTYPE html>
-<html>
 
-<head>
-  <title>Сайт нашей школы</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
 <?php
     include_once 'inc/top.inc.php';
 ?>
@@ -48,6 +39,3 @@ include_once 'inc/data.inc.php';
 <?php
     include_once 'inc/bottom.inc.php';
 ?>
-</body>
-
-</html>
