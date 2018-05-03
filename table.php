@@ -15,19 +15,19 @@ $color = ($color) ? $color : 'yellow';
     <!-- Область основного контента -->
     <form action='<?= $_SERVER["REQUEST_URI"]?>' method="post">
       <label>Количество колонок: </label>
-      <br />
-      <input name='cols' type='text' value="" />
-      <br />
+      <br>
+      <input name='cols' type='text' value="">
+      <br>
       <label>Количество строк: </label>
-      <br />
-      <input name='rows' type='text' value="" />
-      <br />
+      <br>
+      <input name='rows' type='text' value="">
+      <br>
       <label>Цвет: </label>
-      <br />
-      <input name='color' type='text' value="" />
-      <br />
-      <br />
-      <input type='submit' value='Создать' />
+      <br>
+      <input name='color' type='text' value="">
+      <br>
+      <br>
+      <input type='submit' value='Создать'>
     </form>
     <!-- Таблица -->
       <br>
@@ -40,20 +40,4 @@ $color = ($color) ? $color : 'yellow';
     <!-- Таблица -->
     <!-- Область основного контента -->
   </div>
-  <!--<div id="nav">
-    <h2>Навигация по сайту</h2>
-    <!-- Меню -->
-    <!--<ul>
-      <li><a href='index.php'>Домой</a>
-      </li>
-      <li><a href='about.php'>О нас</a>
-      </li>
-      <li><a href='contact.php'>Контакты</a>
-      </li>
-      <li><a href='table.php'>Таблица умножения</a>
-      </li>
-      <li><a href='calc.php'>Калькулятор</a>
-      </li>
-    </ul>-->
-    <!-- Меню -->
-  <!--</div>-->
+
